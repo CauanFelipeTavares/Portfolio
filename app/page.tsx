@@ -1,35 +1,35 @@
-"use client"
+'use client'
 
-import { GitBranchIcon, Linkedin, Mail, AppWindowIcon, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { AnimatedSection } from "./_components/animated-section";
-import { education, experiences, links, projects } from "./_data";
+import { GitBranchIcon, Linkedin, Mail, AppWindowIcon, MessageCircle, LucideMessageSquareMore } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { AnimatedSection } from './_components/animated-section'
+import { education, experiences, links, projects } from './_data'
 
 export default function Home() {
 
   return (
-    <main className="min-h-screen bg-[#0C0C24]">
+    <main className='min-h-screen bg-[#0C0C24]'>
 
       {/* Introduction Section */}
-      <AnimatedSection className="min-h-screen flex items-center justify-center px-4 relative">
-        <div className="absolute inset-0 bg-[#1F1F3F] opacity-50 pattern-grid"></div>
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="flex flex-col items-center">
+      <AnimatedSection className='min-h-screen flex items-center justify-center px-4 relative'>
+        <div className='absolute inset-0 bg-[#1F1F3F] opacity-50 pattern-grid'></div>
+        <div className='max-w-4xl mx-auto text-center relative z-10'>
+          <div className='flex flex-col items-center'>
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="w-48 h-48 mb-8 rounded-full overflow-hidden relative border-4 border-white/10"
+              className='w-48 h-48 mb-8 rounded-full overflow-hidden relative border-4 border-white/10'
             >
               <Image
-                src="https://github.com/CauanFelipeTavares.png"
-                alt="Cauan Felipe Tavares"
+                src='https://github.com/CauanFelipeTavares.png'
+                alt='Cauan Felipe Tavares'
                 fill
-                className="object-cover"
+                className='object-cover'
                 priority
               />
             </motion.div>
@@ -37,7 +37,7 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="text-5xl md:text-7xl font-bold text-white mb-6"
+              className='text-5xl md:text-7xl font-bold text-white mb-6'
             >
               Cauan Felipe Tavares
             </motion.h1>
@@ -46,7 +46,7 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="text-xl md:text-2xl text-gray-300 mb-8"
+              className='text-xl md:text-2xl text-gray-300 mb-8'
             >
               Full Stack Developer specializing in JavaScript technologies
             </motion.p>
@@ -54,17 +54,17 @@ export default function Home() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="flex justify-center gap-4"
+              className='flex justify-center gap-4'
             >
-              <Button variant="secondary" size="lg" asChild>
-                <Link href={links.github} target="_blank">
-                  <GitBranchIcon className="mr-2 h-5 w-5" />
+              <Button variant='secondary' size='lg' asChild>
+                <Link href={links.github} target='_blank'>
+                  <GitBranchIcon className='mr-2 h-5 w-5' />
                   GitHub
                 </Link>
               </Button>
-              <Button variant="secondary" size="lg" asChild>
-                <Link href={links.linkedIn} target="_blank">
-                  <Linkedin className="mr-2 h-5 w-5" />
+              <Button variant='secondary' size='lg' asChild>
+                <Link href={links.linkedIn} target='_blank'>
+                  <Linkedin className='mr-2 h-5 w-5' />
                   LinkedIn
                 </Link>
               </Button>
@@ -74,10 +74,10 @@ export default function Home() {
       </AnimatedSection>
 
       {/* About Section */}
-      <AnimatedSection className="py-20 bg-[#1F1F3F]">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-8">About Me</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
+      <AnimatedSection className='py-20 bg-[#1F1F3F]'>
+        <div className='max-w-4xl mx-auto px-4'>
+          <h2 className='text-3xl font-bold text-white mb-8'>About Me</h2>
+          <p className='text-gray-300 text-lg leading-relaxed'>
             I am a self-taught Full Stack Developer with a strong passion for building scalable and efficient web solutions. My journey began during the pandemic, with just a computer, a strict lockdown, and a deep curiosity for development. I immersed myself in online courses, focusing on web technologies, and quickly transitioned into freelancing, where I discovered my expertise in bot development—an area I continue to explore today.
             <br /><br />
             With experience developing over 20 complete web projects, I have worked with React, ExpressJS, API development, server configuration, and database management. I am also skilled in automation, web scraping, and integrating messaging platforms like Telegram and WhatsApp.
@@ -86,10 +86,10 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Projects Section */}
-      <AnimatedSection className="py-20 bg-[#0C0C24]">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-12">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <AnimatedSection className='py-20 bg-[#0C0C24]'>
+        <div className='max-w-6xl mx-auto px-4'>
+          <h2 className='text-3xl font-bold text-white mb-12'>Featured Projects</h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {projects.map((project, index) => (
               <motion.div
                 key={index}
@@ -99,26 +99,30 @@ export default function Home() {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Card className="bg-[#1F1F3F] border-none p-6 h-full transition-colors duration-200 hover:bg-[#2A2A4F]">
-                  <h3 className="text-xl font-semibold text-white mb-3">{project.title}</h3>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <Card className='bg-[#1F1F3F] border-none p-6 h-full transition-colors duration-200 hover:bg-[#2A2A4F]'>
+                  <h3 className='text-xl font-semibold text-white mb-3'>{project.title}</h3>
+                  <p className='text-gray-300 mb-4'>{project.description}</p>
+                  <div className='flex flex-wrap gap-2 mb-4'>
                     {project.tech.map((tech, i) => (
-                      <span key={i} className="px-3 py-1 bg-[#0C0C24] text-gray-300 rounded-full text-sm">
-                        {tech}
+                      <span
+                        key={i}
+                        className={`px-3 py-1 bg-[#0C0C24] text-gray-300 rounded-full text-sm ${tech.url && 'cursor-pointer hover:underline'}`}
+                        onClick={() => tech.url ? window.open(tech.url) : null}
+                      >
+                        {tech.name}
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-2 mb-2">
-                    { project.github && <Button variant="outline" size="sm" asChild>
-                      <Link href={project.github}>
-                        <GitBranchIcon className="mr-2 h-4 w-4" />
+                  <div className='flex gap-2 mb-2'>
+                    { project.github && <Button variant='outline' size='sm' asChild>
+                      <Link href={project.github} target='_blank'>
+                        <GitBranchIcon className='mr-2 h-4 w-4' />
                         View Code
                       </Link>
                     </Button> }
-                    { project.url && <Button variant="outline" size="sm" asChild>
-                      <Link href={project.url}>
-                        <AppWindowIcon className="mr-2 h-4 w-4" />
+                    { project.url && <Button variant='outline' size='sm' asChild>
+                      <Link href={project.url} target='_blank'>
+                        <AppWindowIcon className='mr-2 h-4 w-4' />
                         View Project
                       </Link>
                     </Button> }
@@ -195,16 +199,22 @@ export default function Home() {
           <p className="text-gray-300 mb-8">
             I am always interested in hearing about new projects and opportunities.
           </p>
-          <div className="flex justify-center gap-4">
-            <Button variant="outline" size="lg" asChild>
-              <Link href="mailto:cauan.tavares@email.com">
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button variant="secondary" size="lg" asChild>
+              <Link href={links.mailto}>
                 <Mail className="mr-2 h-5 w-5" />
                 Email Me
               </Link>
             </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link href="https://linkedin.com/in/cauanft">
-                <MessageCircle className="mr-2 h-5 w-5" />
+            <Button variant="secondary" size="lg" asChild>
+              <Link href={links.whatsappContact}>
+                <LucideMessageSquareMore className="mr-2 h-5 w-5" />
+                Message on Whatsapp
+              </Link>
+            </Button>
+            <Button variant="secondary" size="lg" asChild>
+              <Link href={links.linkedIn}>
+                <MessageCircle className='mr-2 h-5 w-5' />
                 Message on LinkedIn
               </Link>
             </Button>
@@ -212,5 +222,5 @@ export default function Home() {
         </div>
       </AnimatedSection>
     </main>
-  );
+  )
 }

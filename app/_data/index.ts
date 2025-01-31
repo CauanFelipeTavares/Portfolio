@@ -1,7 +1,10 @@
 interface IProjects {
     title: string
     description: string
-    tech: string[]
+    tech: {
+        name: string
+        url: string
+    }[]
     github?: string
     url?: string
     projectPage?: string
@@ -9,62 +12,71 @@ interface IProjects {
 
 export const projects: IProjects[] = [
     {
-        title: "Real-time Chat Application",
-        description: "Built a scalable chat application using Socket.io, React, and Node.js with real-time message delivery and typing indicators.",
-        tech: ["React", "Node.js", "Socket.io", "Express"],
-        // github: "https://github.com/cauanft",
+        title: 'CV Creator',
+        description: 'Developed a platform using Next.js with features for creating personalized CVs, allowing users to add elements and structure their resumes dynamically.',
+        tech: [
+            { name: 'Next.js', url: 'https://nextjs.org/' },
+            { name: 'Prisma', url: 'https://www.prisma.io/' },
+            { name: 'Tailwind', url: 'https://tailwindcss.com/' },
+            { name: 'Shadcn/ui', url: 'https://ui.shadcn.com/' },
+        ],
+        github: 'https://github.com/CauanFelipeTavares/CV-Creator',
     },
     {
-        title: "E-commerce Platform",
-        description: "Developed a full-featured e-commerce platform with Next.js, featuring cart management, user authentication, and payment integration.",
-        tech: ["Next.js", "Prisma", "Stripe", "TypeScript"],
-        github: "https://github.com/cauanft",
-        url: "https://github.com/cauanft",
-        projectPage: '/project/ecommerce'
+        title: 'Smart Contract',
+        description: 'Built a full-stack platform for creating and authenticating digital contracts, enhancing contract structuring with AI.',
+        tech: [
+            { name: 'React (CRA)', url: 'https://create-react-app.dev/' },
+            { name: 'ExpressJS', url: 'https://expressjs.com/' },
+            { name: 'Gateway (Asaas)', url: 'https://www.asaas.com/' },
+            { name: 'OpenAI API', url: 'https://openai.com/' },
+        ],
+        url: 'http://smartcontract.codesotech.com.br/',
     },
     {
-        title: "Task Management System",
-        description: "Created a collaborative task management system with real-time updates and team features.",
-        tech: ["React", "Node.js", "Express", "MongoDB"],
-        github: "https://github.com/cauanft",
+        title: 'Codeso Tech',
+        description: 'Built a SaaS platform for creating and managing Telegram message bots, allowing users to configure messages and settings.',
+        tech: [
+            { name: 'Node.js', url: 'https://nodejs.org/en' },
+            { name: 'MongoDB', url: 'https://www.mongodb.com/' },
+            { name: 'PM2', url: 'https://pm2.keymetrics.io/' },
+            { name: 'Socket.io', url: 'https://socket.io/' },
+        ],
+        url: 'https://codesotech.com.br/',
     },
 ]
 
 export const experiences = [
     {
-        role: "Senior Full Stack Developer",
-        company: "TechCorp Solutions",
-        period: "2021 - Present",
-        description: "Lead developer for multiple high-impact projects, mentoring junior developers and implementing best practices.",
+        role: 'Principal Full Stack Developer',
+        company: 'Codeso Tech',
+        period: '2022 - Present',
+        description: 'As a Full-Stack Developer and founder of Codeso Tech, I have developed and implemented complete technological solutions for various projects, including automation and web platforms.',
     },
     {
-        role: "Full Stack Developer",
-        company: "Digital Innovations",
-        period: "2019 - 2021",
-        description: "Developed and maintained various web applications using React, Node.js, and related technologies.",
-    },
-    {
-        role: "Frontend Developer",
-        company: "WebTech Studios",
-        period: "2018 - 2019",
-        description: "Focused on creating responsive and accessible web interfaces using modern JavaScript frameworks.",
+        role: 'Bot Developer',
+        company: 'Codeso Tech',
+        period: '2021 - 2022',
+        description: 'Specialized in developing intelligent bots for process automation and data extraction, focusing on efficiency and system integration.',
     },
 ]
   
 export const education = [
     {
-        degree: "Bachelor's in Computer Science",
-        institution: "Federal University of Technology",
-        period: "2015 - 2019",
+        degree: 'Technologist, Systems Analysis and Development',
+        institution: 'Fatec Rio Preto',
+        period: '2022 - 2024',
     },
     {
-        degree: "Full Stack Web Development",
-        institution: "Tech Bootcamp",
-        period: "2018",
+        degree: 'Technical Course Integrated into High School, Electronics Technician',
+        institution: 'Etec Philadelpho Gouvêa Netto',
+        period: '2019 - 2021',
     },
 ]
 
 export const links = {
-    linkedIn: 'https://www.linkedin.com/in/cauantavares/',
+    linkedIn: 'https://www.linkedin.com/in/cauantavares',
     github: 'https://github.com/CauanFelipeTavares',
+    whatsappContact: 'https://api.whatsapp.com/send/?phone=5517992318569&text&type=phone_number&app_absent=0',
+    mailto: 'mailto:tavarescauanf@gmail.com'
 }
